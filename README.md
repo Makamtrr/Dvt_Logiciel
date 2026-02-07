@@ -4,8 +4,6 @@ Projet d'ingénierie logicielle - Prédiction de survie sur le Titanic avec Mach
 
 ## 🚀 Quick Start
 
-### Option 1 : Installation Locale
-
 ```bash
 # Installation
 pip install -r requirements.txt
@@ -15,17 +13,6 @@ python src/main.py
 
 # Tests
 pytest tests/
-```
-
-### Option 2 : Docker (Recommandé)
-
-```bash
-# Avec Docker Compose
-docker-compose up
-
-# Ou avec Docker
-docker build -t titanic-prediction .
-docker run --rm -v $(pwd)/output:/app/output titanic-prediction
 ```
 
 ## 📁 Structure
