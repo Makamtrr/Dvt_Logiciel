@@ -1,10 +1,16 @@
 """Main script to run the Titanic survival prediction pipeline."""
 
 import config
-from data_preprocessing import (calculate_survival_rates, load_data,
-                                preprocess_features)
-from model_evaluation import (create_submission_file, generate_predictions,
-                              print_prediction_summary)
+from data_preprocessing import (
+    calculate_survival_rates,
+    load_data,
+    preprocess_features,
+)
+from model_evaluation import (
+    create_submission_file,
+    generate_predictions,
+    print_prediction_summary,
+)
 from model_training import get_model_info, train_random_forest
 
 
