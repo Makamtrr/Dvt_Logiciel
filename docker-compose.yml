@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  titanic-prediction:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: titanic-survival-prediction:latest
+    container_name: titanic-predictor
+    volumes:
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
