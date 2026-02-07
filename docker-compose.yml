@@ -11,4 +11,3 @@ services:
       - ./output:/app/output
     environment:
       - PYTHONUNBUFFERED=1
-    restart: unless-stopped
