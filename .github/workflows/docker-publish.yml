@@ -1,8 +1,12 @@
 name: Docker Build and Push
 
 on:
-  push:
-    branches: [ master ]
+  workflow_run:
+    workflows: ["Python CI"]
+    types:
+      - completed
+    branches:
+      - master
 
 env:
   REGISTRY: docker.io
@@ -11,6 +15,8 @@ env:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    # Ne lance que si le workflow Python CI a réussi
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: read
       packages: write
