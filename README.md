@@ -28,8 +28,6 @@ docker build -t titanic-prediction .
 docker run --rm -v $(pwd)/output:/app/output titanic-prediction
 ```
 
-📖 Voir [DOCKER.md](DOCKER.md) pour plus de détails
-
 ## 📁 Structure
 
 ```
