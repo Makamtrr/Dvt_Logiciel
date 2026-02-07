@@ -70,5 +70,8 @@ docs/_build/
 # Output directory
 output/
 
+# Rapports (seront dans un document Word final)
+rapports/
+
 cours_projet/
 data/
