@@ -66,3 +66,7 @@ htmlcov/
 
 # Documentation build
 docs/_build/
+
+rapports/
+cours_projet/
+data/
